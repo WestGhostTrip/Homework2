@@ -25,6 +25,8 @@ console.log(solveEquation(5,-6,1));
 
 "use strict";
 function solveEquation(a, b, c) {
+    if(a == 0)
+        return false;
 let D = b * b - 4 * a * c;
 let arr = {};
 if(D < 0)
